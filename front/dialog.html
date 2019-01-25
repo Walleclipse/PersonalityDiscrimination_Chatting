@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>let's chat</title>
+    <link href="css/global.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    
+</head>
+<body class="chat-bg">
+<header class="header-title">find your soulmate</header>
+
+<canvas id="myChart" width="10" height="5" style="position: absolute; bottom:50rem;top:20rem"></canvas>
+
+<section class="chat-box">
+    <span class="chat-trip">
+        welcome ~
+    </span>
+    
+    <button class="end-btn">end</button>
+
+    <div class="bubbleDiv"></div>
+    
+</section>
+
+
+
+
+<footer class="chat-edit clearfix">
+
+    <p class="chat-info" placeholder="say something~~" contenteditable="true"></p>
+    <span class="uploadImg fl">
+        <input type="file" name="uploadfile" class="uploadfile" placeholder="say something~~">
+    </span>
+
+    <button class="send-btn fr">send</button>
+
+
+    
+
+</footer>
+
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/chat.js"></script>
+
+<script>
+    $(document).ready(function(){
+        /*
+         左侧 接收别人信息 调用，三个参数：leftBubble，头像路径，内容
+         chat(element,imgSrc,doctextContent)
+         */
+        chat("leftBubble","images/head_portrait.png","hello, my name is cola～");
+
+
+
+        $(".send-btn").click(function(){
+            //右侧 自己发 调用，只需填一个参数"rightBubble"
+            chat("rightBubble");
+
+
+            //清空输入框
+            $('.chat-info').html('');
+
+        })
+
+        $(".end-btn").click(function(){
+            //右侧 自己发 调用，只需填一个参数"rightBubble"
+            finishChat();
+
+
+        })
+    })
+</script>
+
+
+
+<!-- <script src="https://cdn.bootcss.com/Chart.js/2.7.3/Chart.min.js"></script>
+ -->
+</body>
+</html>

@@ -1,0 +1,207 @@
+html {
+    height: 100%;
+}
+.header-title{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #6F83FF;
+    height: 4rem;
+    width: 100%;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 2rem;
+    color: #fff;
+    z-index: 3;
+}
+.chat-bg {
+    background: #f9fcfd;
+    height: 100%;
+    position: relative;
+    padding-bottom: 5rem;
+}
+
+.chat-box {
+    height: 100%;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.chat-trip {
+    background-color: #F4F4F4;
+    line-height: 3.5rem;
+    height: 6%;
+    display: block;
+    text-align: center;
+    width: 94%;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    position: relative;
+    top: 1rem;
+    left: 3%;
+    z-index: 2;
+    display: block;
+}
+
+.bubbleDiv {
+    width: 100%;
+    margin: 0 auto;
+    overflow: auto;
+    height: 94%;
+    padding: 0 3%;
+}
+
+.bubbleItem {
+    width: 100%;
+    position: relative;
+}
+
+.leftBubble {
+    position: relative;
+    background-color: #EFF6F9;
+    margin-left: 1rem;
+}
+
+.rightBubble {
+    position: relative;
+    margin-right: 1rem;
+    float: right;
+    background-color: #6F83FF;
+    color: #fff;
+}
+
+.bubble {
+    line-height: 30px;
+    border-radius: 0.8rem;
+    margin-top: 2rem;
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    font-size: 1.4rem;
+    margin-left: 5rem;
+}
+
+.leftBubble .topLevel {
+    position: absolute;
+    top: 1rem;
+    left: -9px;
+    border-bottom: 10px solid #EFF6F9;
+    border-left: 10px solid transparent;
+}
+
+.rightBubble .topLevel {
+    position: absolute;
+    top: 1rem;
+    right: -8px;
+    border-bottom: 10px solid #6F83FF;
+    border-right: 10px solid transparent;
+}
+
+.chat-time {
+    color: #888;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+
+.chat-edit {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid #eee;
+    background: #fff;
+    padding: 0.5rem 6.4rem 0.6rem 4.4rem;
+    box-sizing: border-box;
+}
+
+.chat-info {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #eee;
+    resize: none;
+    padding: 0.6rem 0.4rem;
+    font-size: 1.6rem;
+    color: #666;
+    overflow-y: visible;
+}
+
+.send-btn {
+    padding: 0.6rem 1rem;
+    border: 0;
+    background: #6F83FF;
+    color: #fff;
+    min-width: 4rem;
+    border-radius: 0.4rem;
+    margin-left: 3%;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+.start-btn {
+    padding: 0.6rem 1rem;
+    border: 0;
+    background: #6F83FF;
+    color: #fff;
+    min-width: 4rem;
+    border-radius: 0.4rem;
+    margin-left: 3%;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+.end-btn {
+    padding: 0.6rem 1rem;
+    border: 0;
+    background: #6F83FF;
+    color: #fff;
+    min-width: 4rem;
+    border-radius: 0.4rem;
+    margin-left: 3%;
+    position: absolute;
+    right: 1rem;
+    top: 5rem;
+}
+
+.uploadImg {
+    display: inline-block;
+    background: url("../images/icon.png") no-repeat;
+    width: 2.4rem;
+    height: 2.4rem;
+    background-position: 0 -95px;
+    background-size: 2.4rem;
+    position: relative;
+    z-index: 2;
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+}
+
+.uploadfile {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.doctor-head {
+    width: 4rem;
+    box-sizing: border-box;
+    position: absolute;
+    height: 4rem;
+    top: 2rem;
+}
+
+
+.doctor-head img {
+    width: 100%;
+    border-radius: 50rem;
+    box-sizing: border-box;
+    border: 1px solid #e5e5e5;
+    height: 100%;
+}

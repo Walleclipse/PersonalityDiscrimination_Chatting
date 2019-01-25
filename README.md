@@ -1,2 +1,42 @@
 # PersonalityDiscrimination_Chatting
 Personality Representation &amp; Personality based Chatting   
+
+This is a project of the "三个咕咕呆写出了一群bug"(Three heros & A bunch of bug) in Google AI ML Winter Camp. Thanks to my team members!  
+
+[MBTI](https://en.wikipedia.org/wiki/Myers%E2%80%93Briggs_Type_Indicator) Personality can be judged by one's declaration, social media posts, or dialogue.  This personality can be used in chatting machine. If chatting machine can to learn the speaker's personality, they might be able to make better dialogues.  From this idea, we make a simple chatting machine. Our model is very simple and the data is very few, so the effect is not very good, but we believe that the chatting machine with personality analysis is a worthwhile idea.
+
+<img src="https://github.com/Walleclipse/PersonalityDiscrimination_Chatting/raw/master/demo/chatbot1.png" width="600" >
+
+More details shown in 'PersonalityDiscrimination_Chatting.pdf' 
+
+## Method 
+
+This work mainly consists of two parts, 1. Personality Discriminator: discriminate the speaker's personality according to some input sentences. 2. Chatting Machine: Ggenerate the corresponding respose according to the input sentence and the speaker's personality. 
+
+<img src="https://github.com/Walleclipse/PersonalityDiscrimination_Chatting/raw/master/demo/model.png" width="600" >
+
+1. Personality Discriminator:
+
+Target of this part is classifying people into 16 distinct personality types across 4 axis, showing their somedialogues or some declaration (or Twitter, Wechat …)  ([kaggle MBTI data set](https://www.kaggle.com/datasnaek/mbti-type))
+
+We used ELMo pretrained model, Bi-LSTM encoder and self Attention Mechanisms.
+
+2. Chatting Machine:
+
+Given a post $X= (x_1,x_2,..,x_n )$ and a personality type $e$ of the response
+to be generated, the goal is to generate a response $Y= (y_1,y_2,..,y_n )$
+that is coherent with the personality type $e$.
+
+### About Code
+MBTI_discriminator_torch.py ,  MBTI_discriminator_bert.py , MBTI_discriminator_lgb.ipynb   
+All three files are MBTI discrimination model. The first file contains the main model.
+dialogue.py   
+seq2seq conversation model 
+front  
+This folder contains the front-end program for chatting machine.  
+
+## Results
+
+The model outputs both personality scores and dialogue response.
+
+<img src="https://github.com/Walleclipse/PersonalityDiscrimination_Chatting/raw/master/demo/chatbot2.png" width="600" >
