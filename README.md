@@ -5,7 +5,7 @@ This is a project of the "三个咕咕呆写出了一群bug"(Three heros & A bun
 
 [MBTI](https://en.wikipedia.org/wiki/Myers%E2%80%93Briggs_Type_Indicator) Personality can be judged by one's declaration or dialogue.   If chatting machine can to learn the speaker's personality, they might be able to make better dialogues.    
 According to this idea, we make a simple chatting machine. Because owe used simple model and a few dialogue data, the result is not very good, but the idea of chatting machine with personality analysis may be worthwhile.   
-There is another [repo](https://github.com/xiaotinghe/PCM) from my teamate.
+There are another [repo](https://github.com/xiaotinghe/PCM) and [repo](https://github.com/shuhanfan/Personalize_Chatting_Bot) from my teamates.
 
 <img src="https://github.com/Walleclipse/PersonalityDiscrimination_Chatting/raw/master/demo/chatbot1.png" width="400" >
 
