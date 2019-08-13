@@ -19,7 +19,7 @@ This work mainly consists of two parts, 1. Personality Discriminator: discrimina
 
 1. Personality Discriminator:
 
-The target of this part is classifying people into 16 distinct personality types across 4 axes, with feeding some dialogues or some declaration (or Twitter, Wechat …)  ([kaggle MBTI dataset](https://www.kaggle.com/datasnaek/mbti-type))
+The target of this part is classifying people into 16 distinct personality types across 4 axes, after feeding some dialogues or some declaration (or Twitter, Wechat …)  ([kaggle MBTI dataset](https://www.kaggle.com/datasnaek/mbti-type))
 
 We used ELMo pre-trained model, Bi-LSTM encoder and self Attention Mechanisms.
 
