@@ -3,8 +3,8 @@ Personality Representation &amp; Personality based Chatting
 
 This is a project of the "三个咕咕呆写出了一群bug"(Three heros & A bunch of bug) in Google AI ML Winter Camp. Thanks to my team members!  
 
-[MBTI](https://en.wikipedia.org/wiki/Myers%E2%80%93Briggs_Type_Indicator) Personality can be judged by one's declaration or dialogue.   If chatting machine can to learn the speaker's personality, they might be able to make better dialogues.    
-According to this idea, we make a simple chatting machine. Because we used simple model and a few dialogue data, the result is not very good, but the idea of chatting machine with personality analysis may be worthwhile.   
+[MBTI](https://en.wikipedia.org/wiki/Myers%E2%80%93Briggs_Type_Indicator) Personality can be judged by one's declaration or dialogue.   If a chatting machine can learn the speaker's personality, they might be able to make better dialogues.    
+According to this idea, we make a simple chatting machine. Because we used a simple model and a few dialogue data, the result is not very good, but the idea of chatting machine with personality analysis may be worthwhile.     
 There are another [repo](https://github.com/xiaotinghe/PCM) and [repo](https://github.com/shuhanfan/Personalize_Chatting_Bot) from my teamates.
 
 <img src="https://github.com/Walleclipse/PersonalityDiscrimination_Chatting/raw/master/demo/chatbot1.png" width="400" >
@@ -13,15 +13,15 @@ More details shown in 'PersonalityDiscrimination_Chatting.pdf'
 
 ## Method 
 
-This work mainly consists of two parts, 1. Personality Discriminator: discriminate the speaker's personality according to some input sentences. 2. Chatting Machine: Ggenerate the corresponding respose according to the input sentence and the speaker's personality. 
+This work mainly consists of two parts, 1. Personality Discriminator: discriminate the speaker's personality according to some input sentences. 2. Chatting Machine: Generate the corresponding response according to the input sentence and the speaker's personality. 
 
 <img src="https://github.com/Walleclipse/PersonalityDiscrimination_Chatting/raw/master/demo/model.png" width="800" >
 
 1. Personality Discriminator:
 
-Target of this part is classifying people into 16 distinct personality types across 4 axis, showing their somedialogues or some declaration (or Twitter, Wechat …)  ([kaggle MBTI dataset](https://www.kaggle.com/datasnaek/mbti-type))
+The target of this part is classifying people into 16 distinct personality types across 4 axes, with feeding some dialogues or some declaration (or Twitter, Wechat …)  ([kaggle MBTI dataset](https://www.kaggle.com/datasnaek/mbti-type))
 
-We used ELMo pretrained model, Bi-LSTM encoder and self Attention Mechanisms.
+We used ELMo pre-trained model, Bi-LSTM encoder and self Attention Mechanisms.
 
 2. Chatting Machine:
 
@@ -30,11 +30,11 @@ to be generated, the goal is to generate a response Y= (y_1,y_2,..,y_n )
 that is coherent with the personality type p.
 
 ### About Code
-MBTI_discriminator_torch.py ,  MBTI_discriminator_bert.py , MBTI_discriminator_lgb.ipynb       
+`MBTI_discriminator_torch.py` ,  `MBTI_discriminator_bert.py` , `MBTI_discriminator_lgb.ipynb`         
 All three files are MBTI discrimination model. The first file contains the main model.  
-dialogue.py     
+`dialogue.py`     
 seq2seq conversation model   
-front    
+`front`    
 This folder contains the front-end program for chatting machine.    
 
 ## Results
