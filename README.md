@@ -29,7 +29,7 @@ Given a post X= (x_1,x_2,..,x_n ) and a personality type p of the response
 to be generated, the goal is to generate a response Y= (y_1,y_2,..,y_n )
 that is coherent with the personality type p.
 
-### About Code
+### About the Code
 `MBTI_discriminator_torch.py` ,  `MBTI_discriminator_bert.py` , `MBTI_discriminator_lgb.ipynb`         
 All three files are MBTI discrimination model. The first file contains the main model.  
 `dialogue.py`     
